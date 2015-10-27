@@ -95,7 +95,7 @@ SassCompiler.prototype._nativeCompile = function(source, callback) {
     file: source.path,
     data: source.data,
     includePaths: this._getIncludePaths(source.path),
-    outputStyle: (this.optimize ? "compressed" : "nested"),
+    outputStyle: (this.optimize ? "compact" : "nested"),
     sourceComments: !this.optimize,
     indentedSyntax: sassRe.test(source.path)
   },
